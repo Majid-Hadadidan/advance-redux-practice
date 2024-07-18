@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 const ProductItem = ({ title, id, price, description }) => {
   const dispatch = useDispatch();
 
+  
   function addToCartHandler() {
     dispatch(cartAction.addItemToCart({ id, price, title }));
   }
